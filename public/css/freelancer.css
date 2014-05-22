@@ -174,7 +174,7 @@ section h2 {
 
 section.success {
     color: #fff;
-    background: #18bc9c;
+    background: #5db3b7;
 }
 
 @media(max-width:767px) {
@@ -438,7 +438,7 @@ footer .footer-below {
 }
 
 h3 a, #upcoming a {
-    color: #eef;
+    color: #fff;
 }
 
 h3 a:hover, #upcoming a:hover {

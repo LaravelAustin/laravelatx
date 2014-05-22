@@ -15,7 +15,7 @@
     <link href="/css/freelancer.css" rel="stylesheet" type="text/css">
 
     <!-- Fonts -->
-    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
     <!-- IE8 support for HTML5 elements and media queries -->
@@ -79,67 +79,7 @@
     </div>
 </header>
 
-<section id="portfolio">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2>Location/Time</h2>
-                <hr class="star-primary">
-                <h3>2nd Tuesday of the month.  7pm - 9pm.</h3>
-                <hr class="star-primary">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-3 text-center">
-                <img src="img/capfac.png" class="" alt="Capital Factory"><br>
-                <p>701 Brazos Street<br>Suite 1601<br>Austin, TX  78701</p>
-            </div>
-            <div class="col-sm-9">
-                <iframe width="100%" height="350" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Capital%20Factory%2C%20701%20Brazos%20Street%2C%20Austin%2C%20TX%2C%20United%20States&key=AIzaSyCA0UkGr4a5DsqU3O91tr_B6oExxBPucUU"></iframe>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="success" id="upcoming">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2>Upcoming</h2>
-                <hr class="star-light">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-            @foreach($meetups as $meetup)
-                <h3><a href="{{ $meetup['url'] }}">{{ $meetup['date'] }}</a></h3>
-                <p>
-                    {{ $meetup['description'] }}
-                    <strong>RSVPs:</strong> {{ $meetup['rsvps'] }}
-                </p>
-            <br>
-
-            @endforeach
-                </div>
-        </div>
-    </div>
-</section>
-
-<section id="about">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2>About</h2>
-                <hr class="star-primary">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                Laravel Austin is a group for people in the Austin, TX area who are interested in learning, exploring, and sharing knowledge about the <a href="http://laravel.com">Laravel PHP</a> framework.
-            </div>
-        </div>
-    </div>
-</section>
+@yield('content')
 
 <footer class="text-center">
     <div class="footer-above">
@@ -154,10 +94,15 @@
                     <h3>Around the Web</h3>
                     <ul class="list-inline">
                         <li>
-                            <a href="https://www.facebook.com/laravelaustin" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            <a href="https://www.facebook.com/laravelaustin" class="btn-social btn-outline" title="Facebook"><i class="fa fa-fw fa-facebook"></i></a>
                         </li>
                         <li>
-                            <a href="https://twitter.com/laravelaustin" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            <a href="https://twitter.com/laravelaustin" class="btn-social btn-outline" title="Twitter"><i class="fa fa-fw fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#irc-modal" class="btn-social btn-outline" data-toggle="modal" title="Freenode IRC">
+                                <i class="fa fa-fw fa-rebel"></i>
+                                </a>
                         </li>
                     </ul>
                 </div>
@@ -185,10 +130,31 @@
     </a>
 </div>
 
+<div class="portfolio-modal modal fade" id="irc-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <h2>#AustinPHP on Freenode</h2>
+                        <hr class="star-primary">
+                        <iframe width="100%" height="500" frameborder="0" style="border:0" src="http://webchat.freenode.net/?channels=austinphp"></iframe>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-
-<script src="/js/jquery-1.10.2.js"></script>
-<script src="/js/bootstrap.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 <script src="/js/classie.js"></script>
 <script src="/js/cbpAnimatedHeader.js"></script>

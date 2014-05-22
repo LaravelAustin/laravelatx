@@ -6,6 +6,11 @@ Route::get('/', function()
 	return View::make('main')->withMeetups($meetups);
 });
 
+Route::get('irc', function()
+{
+    return View::make('irc');
+});
+
 
 /**
  * Class Meetups
