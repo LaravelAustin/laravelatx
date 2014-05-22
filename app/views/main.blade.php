@@ -65,9 +65,40 @@
         </div>
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                Laravel Austin is a group for people in the Austin, TX area who are interested in learning, exploring, and sharing knowledge about the <a href="http://laravel.com">Laravel PHP</a> framework.
+                <p>Laravel Austin is a group for people in the Austin, TX area who are
+                    interested in learning, exploring, and sharing knowledge
+                    about the <a href="http://laravel.com">Laravel PHP</a> framework.</p>
             </div>
         </div>
+    </div>
+</section>
+
+<section id="resources">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Resources</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <div class="list-group">
+                    @foreach($resources as $resource)
+                    <a href="{{ $resource['url'] }}" class="list-group-item" target="_blank">
+                        <div class="col-sm-2">
+                            <img src="{{ $resource['image'] }}" class="pull-left clearfix" style="height: 52px; margin-right: 18px">
+                        </div>
+
+                        <h4 class="list-group-item-heading">{{ $resource['name'] }}</h4>
+                        <p class="list-group-item-text">{{ $resource['description'] }}</p>
+                    </a>
+                    @endforeach
+                </div>
+            </div>
+        </div>
+
+
     </div>
 </section>
 @stop

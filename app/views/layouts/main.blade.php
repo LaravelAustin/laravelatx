@@ -16,7 +16,7 @@
 
     <!-- Fonts -->
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Hammersmith+One:400,700' rel='stylesheet' type='text/css'>
 
     <!-- IE8 support for HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -57,6 +57,9 @@
                 <li class="page-scroll">
                     <a href="#about">About</a>
                 </li>
+                <li class="page-scroll">
+                    <a href="#resources">Resources</a>
+                </li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -89,6 +92,9 @@
                     <h3>Location</h3>
                     <p>701 Brazos Street, Suite 1601
                         <br>Austin, TX 78701</p>
+                    <p>
+                        <a href="https://www.google.com/maps/place/701+Brazos+St+%231601/@30.2686147,-97.7404872,17z/data=!3m1!4b1!4m2!3m1!1s0x8644b5a76b09dd7f:0x6d54c21cdc918de2" target="_blank"><i class="fa fa-map-marker"></i> Map</a>
+                    </p>
                 </div>
                 <div class="footer-col col-md-4">
                     <h3>Around the Web</h3>
@@ -111,7 +117,10 @@
                 </div>
                 <div class="footer-col col-md-4">
                     <h3>About</h3>
-                    <p>Laravel Austin is a group for people in the Austin, TX area who are interested in learning, exploring, and sharing knowledge about the <a href="http://laravel.com">Laravel PHP</a> framework.</p>
+                    <p>Laravel Austin is a group for people in the Austin, TX area who are interested in learning,
+                        exploring, and sharing knowledge
+                        about the <a href="http://laravel.com">Laravel PHP</a> framework.</p>
+                    <p><a href="http://www.meetup.com/Laravel-Austin/suggestion"><i class="glyphicon glyphicon-envelope"></i> Contact Us.</a></p>
                 </div>
             </div>
         </div>
