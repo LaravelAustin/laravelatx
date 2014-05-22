@@ -1,46 +1,69 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the Closure to execute when that URI is requested.
-|
-*/
-
 Route::get('/', function()
 {
-	return View::make('hello', ['latx' => 'Laravel Austin']);
+    $meetups = (new Meetups)->getEvents();
+	return View::make('main')->withMeetups($meetups);
 });
 
-Route::get('post', function()
-{
-	return View::make('postform');
-});
 
-Route::post('post', function()
-{
-	$post = new Post;
-	$post->title = Input::get('title');
-	$post->body = Input::get('body');
-	$post->user_id = Input::get('user_id');
-	$post->save();
-	return Redirect::to('done')->withMessage('You are done!');
+/**
+ * Class Meetups
+ * simple object to get meetup api
+ */
+class Meetups {
+    /**
+     * @var string
+     */
+    var $base_url = 'http://api.meetup.com/';
+    /**
+     * @var string
+     */
+    var $events_url = '2/events';
+    /**
+     * @var array
+     */
+    var $params = [
+        'status' => 'upcoming',
+        'order' => 'time',
+        'limited_events' => 'False',
+        'group_urlname' => 'Laravel-Austin',
+        'desc' => 'false',
+        'offset' => 0,
+        'format' => 'json',
+        'page' => 5,
+        'key' => '69531e157b5a67252736263226472a2e'
+    ];
 
-})->before('csrf');
 
-Route::get('done', function()
-{
-	echo Session::get('message');
-});
+    /**
+     * @return array
+     */
+    public function getEvents()
+    {
+        $return = [];
+        $events = $this->sendRequest();
+        foreach($events as $event) {
+            $date = $event->time / 1000;
+            $return[] = [
+                'date' => date('F d, Y', $date),
+                'rsvps' => $event->yes_rsvp_count,
+                'url' => $event->event_url,
+                'description' => $event->description
+            ];
+        }
+        return $return;
 
-Route::get('blog', function()
-{
-		return Post::all();
+    }
 
-});
-
-Route::get('main', 'MainController@index');
+    /**
+     * @return mixed
+     */
+    public function sendRequest()
+    {
+        $url = $this->base_url . $this->events_url . '?' . http_build_query($this->params);
+        $return = file_get_contents($url);
+        $results = json_decode($return);
+        return $results->results;
+    }
+}
