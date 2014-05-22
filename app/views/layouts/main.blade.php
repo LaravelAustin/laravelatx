@@ -100,6 +100,9 @@
                             <a href="https://twitter.com/laravelaustin" class="btn-social btn-outline" title="Twitter"><i class="fa fa-fw fa-twitter"></i></a>
                         </li>
                         <li>
+                            <a href="https://github.com/LaravelAustin" class="btn-social btn-outline" title="Github"><i class="fa fa-fw fa-github"></i></a>
+                        </li>
+                        <li>
                             <a href="#irc-modal" class="btn-social btn-outline" data-toggle="modal" title="Freenode IRC">
                                 <i class="fa fa-fw fa-rebel"></i>
                                 </a>
