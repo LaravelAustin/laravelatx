@@ -68,6 +68,8 @@
                 <p>Laravel Austin is a group for people in the Austin, TX area who are
                     interested in learning, exploring, and sharing knowledge
                     about the <a href="http://laravel.com">Laravel PHP</a> framework.</p>
+                <br>
+                <p><strong>Parking:</strong> Capital Factory is now offering discounted parking in the Omni Parking lot. If you park after 6 p.m it is just $5 dollars for the night. Just remember to grab a validation ticket at the end of meetup from Capital Factory staff.</p>
             </div>
         </div>
     </div>
