@@ -39,26 +39,29 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#page-top">Laravel Austin</a>
+            <a class="navbar-brand" href="/#page-top">Laravel Austin</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li class="hidden">
-                    <a href="#page-top"></a>
+                    <a href="/#page-top"></a>
                 </li>
                 <li class="page-scroll">
-                    <a href="#portfolio">Location/Time</a>
+                    <a href="/#portfolio">Location/Time</a>
                 </li>
                 <li class="page-scroll">
-                    <a href="#upcoming">Upcoming</a>
+                    <a href="/#upcoming">Upcoming</a>
                 </li>
                 <li class="page-scroll">
-                    <a href="#about">About</a>
+                    <a href="/#about">About</a>
                 </li>
                 <li class="page-scroll">
-                    <a href="#resources">Resources</a>
+                    <a href="/#resources">Resources</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="/notes">Notes</a>
                 </li>
             </ul>
         </div>
@@ -100,10 +103,10 @@
                     <h3>Around the Web</h3>
                     <ul class="list-inline">
                         <li>
-                            <a href="https://www.facebook.com/laravelaustin" class="btn-social btn-outline" title="Facebook"><i class="fa fa-fw fa-facebook"></i></a>
+                            <a href="https://www.facebook.com/laravelaustin" class="btn-social btn-outline" title="Facebook"><i class="fa fa-fw fa-empire"></i></a>
                         </li>
                         <li>
-                            <a href="https://twitter.com/laravelaustin" class="btn-social btn-outline" title="Twitter"><i class="fa fa-fw fa-twitter"></i></a>
+                            <a href="https://twitter.com/laravelaustin" class="btn-social btn-outline" title="Twitter"><i class="fa fa-fw fa-rebel"></i></a>
                         </li>
                         <li>
                             <a href="https://github.com/LaravelAustin" class="btn-social btn-outline" title="Github"><i class="fa fa-fw fa-github"></i></a>
