@@ -59,6 +59,10 @@ Route::get('/', function () {
     return View::make('main')->withMeetups($meetups)->withResources($resources);
 });
 
+Route::get('notes', function() {
+   return View::make('notes');
+});
+
 
 /**
  * Class Meetups
