@@ -51,6 +51,17 @@
                     <li>Laravel Austin Meetup - July 8, 2014</li>
                     <li>PHP Meetup - July 10, 2014</li>
                 </ul>
+
+                <strong>Talks</strong>
+                <ul>
+                    <li><a href="http://capitalfactory.lifesize.com/videos/video/509/">Video</a></li>
+                    <li>
+                        <a href="https://docs.google.com/presentation/d/1kcEHjJ8WFDvGcEwWDfccyL1WbLcv5P6E0IEI6jnNkDU/edit?usp=sharing">The Observer Pattern: Using Events practically in Laravel</a> from <a href="https://twitter.com/wesray">@wesray</a>
+                    </li>
+                    <li>
+                        <a href="">APIS and You</a> from <a href="https://twitter.com/HSkrasek">@HSkrasek</a>
+                    </li>
+                </ul>
                 </p>
             </div>
         </div>
