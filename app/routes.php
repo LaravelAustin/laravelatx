@@ -18,6 +18,12 @@ Route::get('/', function () {
             'image' => '/img/laravel.png'
         ],
         [
+            'name'        => 'LaraJobs',
+            'url'         => 'http://larajobs.com/',
+            'description' => 'The best place to find Laravel (and other) programming jobs.',
+            'image' => '/img/larajobs.jpg'
+        ],
+        [
             'name'        => 'Laravel.IO',
             'url'         => 'http://laravel.io/forum',
             'description' => 'Forums, chat, and podcasts about Laravel and the Laravel community',
