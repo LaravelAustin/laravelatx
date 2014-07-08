@@ -19,7 +19,7 @@ Route::get('/', function () {
         ],
         [
             'name'        => 'LaraJobs',
-            'url'         => 'http://larajobs.com/',
+            'url'         => 'http://larajobs.com/?ref=hp9b6',
             'description' => 'The best place to find Laravel (and other) programming jobs.',
             'image' => '/img/larajobs.jpg'
         ],
