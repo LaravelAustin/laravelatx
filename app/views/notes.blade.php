@@ -67,4 +67,41 @@
         </div>
     </div>
 </section>
+
+<section class="notes" id="20140708">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>July 8, 2014</h2>
+                <hr class="star-primary">
+            </div>
+            <div class="col-lg-12">
+                <strong>Calendar</strong><br>
+                <ul>
+                    <li>PHP Meetup - This Thursday, July 10th. <a href="http://www.meetup.com/austinphp/">http://www.meetup.com/austinphp/</a></li>
+                    <li>
+                        Northeast PHP - September 6-7, Boston, MA - <a href="https://www.northeastphp.org">https://www.northeastphp.org</a>
+                    </li>
+
+                    <li>php[world] - November 10-14, Washington DC - <a href="http://world.phparch.com/">http://world.phparch.com/</a>
+                    </li>
+
+                    <li>ZendCon - October 27-30, Santa Clara, CA - <a href="http://www.zendcon.com/">http://www.zendcon.com/</a>
+                    </li>
+                    <li>Laravel Austin Meetup - August 12, 2014</li>
+                    <li>PHP Meetup - August 14, 2014</li>
+                </ul>
+
+                <strong>Talks</strong>
+                <ul>
+                    <li><a href="http://capitalfactory.lifesize.com/videos/video/509/">Video</a></li>
+                    <li>
+                        <a href="">APIS and You - Pt 2</a> from <a href="https://twitter.com/HSkrasek">@HSkrasek</a>
+                    </li>
+                </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
 @stop
