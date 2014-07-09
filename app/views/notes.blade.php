@@ -59,7 +59,7 @@
                         <a href="https://docs.google.com/presentation/d/1kcEHjJ8WFDvGcEwWDfccyL1WbLcv5P6E0IEI6jnNkDU/edit?usp=sharing">The Observer Pattern: Using Events practically in Laravel</a> from <a href="https://twitter.com/wesray">@wesray</a>
                     </li>
                     <li>
-                        <a href="">APIS and You</a> from <a href="https://twitter.com/HSkrasek">@HSkrasek</a>
+                        <a href="https://speakerdeck.com/hskrasek/apis-and-you">APIS and You</a> from <a href="https://twitter.com/HSkrasek">@HSkrasek</a>
                     </li>
                 </ul>
                 </p>
