@@ -7,7 +7,7 @@
             <div class="col-lg-12 text-center">
                 <h2>Location/Time</h2>
                 <hr class="star-primary">
-                <h3>2nd Tuesday of the month.  7pm - 9pm.</h3>
+                <h3>1st Thursday of the month.  7pm - 9pm.</h3>
                 <hr class="star-primary">
             </div>
         </div>

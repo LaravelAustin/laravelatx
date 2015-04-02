@@ -108,7 +108,7 @@ class Meetups
         $return = [];
         $events = $this->sendRequest();
         foreach ($events as $event) {
-            $date     = $event->time / 1000;
+            $date     = ($event->time / 1000) - 21600;
             $return[] = [
                 'date'        => date('F d, Y', $date),
                 'rsvps'       => $event->yes_rsvp_count,
