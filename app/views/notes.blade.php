@@ -6,6 +6,33 @@
                 <h1>Meeting Notes</h1>
             </div>
 
+<section class="notes" id="20161006">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Oct 6, 2016</h2>
+                <hr class="star-primary">
+            </div>
+            <div class="col-lg-12">
+                <strong>Talk</strong>
+                <ul>
+                    <li>
+                        <a href="">Laravel 5.3 Notifications:  <a href="https://twitter.com/HSkrasek">@HSkrasek</a>
+                        <ul>
+                            <li>
+                                <a href="https://laravel.com/docs/5.3/notifications">Laravel Notifcation Docs</a>
+                            </li>
+                            <li>
+                                <a href="http://laravel-notification-channels.com/">Custom Notification Channels</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
 
 <section class="notes" id="20140610">
     <div class="container">
